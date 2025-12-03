@@ -20,7 +20,7 @@
 
 2. `.env.local` 파일에 Gemini API 키 설정:
    ```
-   GEMINI_API_KEY=your_api_key_here
+   VITE_GEMINI_API_KEY=your_api_key_here
    ```
 
 3. 앱 실행:
@@ -32,7 +32,7 @@
 
 1. Vercel에서 GitHub 저장소 연결
 2. 환경 변수 설정:
-   - `GEMINI_API_KEY`: Google Gemini API 키
+   - `VITE_GEMINI_API_KEY`: Google Gemini API 키
 3. 배포 완료!
 
-**중요:** Vercel 대시보드의 Settings → Environment Variables에서 `GEMINI_API_KEY`를 반드시 설정해야 합니다.
+**중요:** Vercel 대시보드의 Settings → Environment Variables에서 `VITE_GEMINI_API_KEY`를 반드시 설정해야 합니다.
