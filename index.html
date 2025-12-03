@@ -12,10 +12,29 @@
         margin: 0;
         padding: 0;
       }
+      #loading {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 24px;
+      }
     </style>
   </head>
   <body class="bg-gray-900 text-gray-100 antialiased selection:bg-indigo-500 selection:text-white">
+    <div id="loading">로딩 중...</div>
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
+    <script>
+      console.log('HTML loaded successfully!');
+      setTimeout(() => {
+        const loading = document.getElementById('loading');
+        if (document.getElementById('root').children.length === 0) {
+          loading.innerHTML = '앱 로딩 실패 - F12를 눌러 콘솔을 확인하세요';
+          loading.style.color = 'red';
+        }
+      }, 3000);
+    </script>
   </body>
 </html>
