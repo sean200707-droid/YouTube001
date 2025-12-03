@@ -1,0 +1,5 @@
+{
+  "name": "YouTube Script Cloner",
+  "description": "An AI-powered tool that analyzes your existing YouTube script's structure and tone to generate high-quality scripts for new topics in the exact same style.",
+  "requestFramePermissions": []
+}
